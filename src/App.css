@@ -28,6 +28,29 @@
   color: white;
 }
 
+.body-text {
+  color: white;
+  font-size: calc(9px + 1.5vmin);
+  margin: 475px;
+  font-family: Courier, monospace;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+  font-size: calc(9px + 1.5vmin);
+  margin: 50px;
+  line-height: 30px;
+  font-family: Courier, monospace;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .App-link {
   color: #61dafb;
 }
