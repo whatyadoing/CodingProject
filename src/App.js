@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1> IEEE Info Page</h1>
-      <p className="body-text"> Learn about the history, achievements, and projects completed by the the UCLA Chapter of the IEEE.</p>
+      <p className="body-text"> Learn about the history, achievements, and projects completed by the UCLA Chapter of the IEEE.</p>
       <img src={robot} alt="Robotic Arm GIF" className="robot-gif" />
         <h2> History of the IEEE</h2>
 
@@ -22,7 +22,7 @@ function App() {
 
         <div>
 
-        <h2> Accolades & Achievements </h2>
+        <h2> Accolades & Recognition </h2>
 
         
         <ul>
@@ -49,20 +49,49 @@ function App() {
 
           <h3> Pocket Racers </h3>
 
+            {/* edwin */}
+
 
           <h3> Digital Audio Visualizer</h3>
+
+
+            {/* edwin */}
           
-        </div>
+        
 
 
         <a
           className="App-link"
-          href="https://samueli.ucla.edu"
+          href="https://www.ieeebruins.com/projects "
           target="_blank"
           rel="noopener noreferrer"
         >
-          UCLA Samueli 
+          Learn more about these projects! 
         </a>
+
+        </div>
+
+        <div>
+
+        <h2> About Us </h2>
+
+          <h3> Ariana </h3>
+
+
+          <h3> Andrew </h3>
+
+
+          <h3> Edwin </h3>
+
+
+
+
+
+
+
+
+        </div>
+        
       </header>
     </div>
   );
