@@ -6,7 +6,46 @@ import microm from './micromouse.png';
 import pocket from './pocketracers.png';
 import dav from './dav.gif';
 import './App.css';
+import {useState} from 'react';
 
+
+/* function: adds a button that allows you to scroll to the "About Us" section */
+function AboutButton () {
+  function ScrollAbout() {
+    window.scrollTo({
+      top: document.body.scrollHeight / 8 * 7,
+      behavior: 'smooth'
+    });
+  }
+
+  return (
+    <button onClick={ScrollAbout} style={{ padding: '10px 10px', fontSize: '12px', fontFamily: 'inherit'}}> Meet us!</button>
+  );
+}
+
+
+
+/* Like Button */
+
+function LikeButton() {
+  const [likes, setLikes] = useState(false);
+
+  function likers() {
+    setLikes(!likes);
+      }
+  
+
+  return ( /*if the page is liked, the "Thank you" message will be displayed */
+    <div style={{ textAlign: 'center', marginTop: '20px' }}>
+      <button onClick={likers} style={{ padding: '10px 10px', fontSize: '12px', fontFamily: 'inherit'}}> Support Us! </button>
+
+      {likes && <p>Thank you! We appreciate it! </p>}
+      {!likes && <p>Help Support Us!</p>}
+    </div>
+
+  )
+
+}
 
 
 /* */
@@ -15,8 +54,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1> IEEE Info Page</h1>
+
+        <AboutButton />
+      
       <p className="body-text"> Learn about the history, achievements, and projects completed by the UCLA Chapter of the IEEE.</p>
       <img src={robot} alt="Robotic Arm GIF" className="robot-gif" />
+        
+        
         <h2> History of the IEEE</h2>
 
         <img src={IEEElogo} alt="IEEE Logo" className="IEEE-logo" />
@@ -81,14 +125,19 @@ Students often walk away with practical experience in digital design, verificati
         <h2> About Us </h2>
 
           <h3> Ariana </h3>
-
+          
+            <p className ="body-text">Aerospace Engineering major</p>
 
           <h3> Andrew </h3>
+
+            <p className ="body-text">Mechanical Engineering major</p>
 
 
           <h3> Edwin </h3>
 
+            <p className ="body-text">Electrical Engineering major</p>
 
+        <LikeButton />
 
 
 
