@@ -58,10 +58,10 @@ function App() {
         <AboutButton />
       
       <p className="body-text"> Learn about the history, achievements, and projects completed by the UCLA Chapter of the IEEE.</p>
-      <img src={robot} alt="Robotic Arm GIF" className="robot-gif" />
+
         
         
-        <h2> History of the IEEE</h2>
+
 
         <img src={IEEElogo} alt="IEEE Logo" className="IEEE-logo" />
 
